@@ -4,5 +4,12 @@
     left: 0;
     right: 0;
     z-index: 99999;
+	height: 15vh;
+	padding-top: 1.5%;
+	min-height: unset !important;
 }
 
+
+#tahefobu-header .elementor-element {
+  min-height: unset !important;
+}

@@ -1,11 +1,13 @@
-
 #tahefobu-header.small {
-    height: 50px;
-  
+    height: 30px;
+    padding-top: 0;
 
 }
 
-
 .invisible {
+  display: none !important;
+}
+
+#logo-big.invisible {
   display: none !important;
 }
