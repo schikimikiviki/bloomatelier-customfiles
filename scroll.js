@@ -9,7 +9,7 @@ function waitForElement(selector, callback, timeout = 10000) {
       callback(el);
     }
   });
-  observer.observe(document.body, { childList: true, subtree: true });
+  observer.observe(document.body, {childList: true, subtree: true});
 
   if (timeout) {
     setTimeout(() => observer.disconnect(), timeout);
@@ -21,35 +21,40 @@ function initLogoScroll(container) {
   const menu = document.querySelector('.tahefobu-nav-menu');
   if (!header || !menu) return;
 
-  const imgBig = document.createElement('img');
-  imgBig.src =
+  const img = document.createElement('img');
+
+  img.src =
       'https://bloomatelier.eu/wp-content/uploads/2026/06/Pasted-image.png';
-  imgBig.alt = 'Logo big';
+  img.alt = 'Logo';
+  img.style.transition = 'opacity 0.2s ease';
 
-  const imgSmall = document.createElement('img');
-  imgSmall.src =
-      'https://bloomatelier.eu/wp-content/uploads/2026/06/cropped.png';
-  imgSmall.alt = 'Logo small';
-  imgSmall.style.display = 'none';
+  container.appendChild(img);
 
-  container.appendChild(imgBig);
-  container.appendChild(imgSmall);
+  let isSmall = false;
 
   window.addEventListener('scroll', () => {
     const scrolled = window.scrollY >= 300;
+    if (scrolled === isSmall) return;
 
-    header.classList.toggle('small', scrolled);
+    isSmall = scrolled;
 
-    imgBig.style.display = scrolled ? 'none' : 'block';
-    imgSmall.style.display = scrolled ? 'block' : 'none';
+    img.style.opacity = 0;
+    img.style.marginTop = scrolled ? '-3vh' : '0px';
+    menu.style.paddingTop = scrolled ? '10px' : '0';
 
-    imgSmall.style.paddingTop = scrolled ? '2vh' : '0px';
-    menu.style.paddingTop = scrolled ? '30px' : '0';
+    setTimeout(() => {
+      img.src = scrolled ?
+          'https://bloomatelier.eu/wp-content/uploads/2026/07/cropped_smaller.png' :
+          'https://bloomatelier.eu/wp-content/uploads/2026/06/Pasted-image.png';
+
+      img.style.opacity = 1;
+    }, 150);
   });
 }
 
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => waitForElement('.logo-big', initLogoScroll));
+  document.addEventListener(
+      'DOMContentLoaded', () => waitForElement('.logo-big', initLogoScroll));
 } else {
   waitForElement('.logo-big', initLogoScroll);
 }
