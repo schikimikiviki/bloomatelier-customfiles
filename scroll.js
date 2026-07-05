@@ -1,17 +1,31 @@
-window.addEventListener('load', () => {
+function waitForElement(selector, callback, timeout = 10000) {
+  const el = document.querySelector(selector);
+  if (el) return callback(el);
+
+  const observer = new MutationObserver(() => {
+    const el = document.querySelector(selector);
+    if (el) {
+      observer.disconnect();
+      callback(el);
+    }
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+
+  if (timeout) {
+    setTimeout(() => observer.disconnect(), timeout);
+  }
+}
+
+function initLogoScroll(container) {
   const header = document.getElementById('tahefobu-header');
-  const container = document.querySelector('.logo-big');
   const menu = document.querySelector('.tahefobu-nav-menu');
+  if (!header || !menu) return;
 
-  if (!header || !container || !menu) return;
-
-  // Bild 1 (groß)
   const imgBig = document.createElement('img');
   imgBig.src =
       'https://bloomatelier.eu/wp-content/uploads/2026/06/Pasted-image.png';
   imgBig.alt = 'Logo big';
 
-  // Bild 2 (klein / alternativ)
   const imgSmall = document.createElement('img');
   imgSmall.src =
       'https://bloomatelier.eu/wp-content/uploads/2026/06/cropped.png';
@@ -32,4 +46,10 @@ window.addEventListener('load', () => {
     imgSmall.style.paddingTop = scrolled ? '2vh' : '0px';
     menu.style.paddingTop = scrolled ? '30px' : '0';
   });
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => waitForElement('.logo-big', initLogoScroll));
+} else {
+  waitForElement('.logo-big', initLogoScroll);
+}

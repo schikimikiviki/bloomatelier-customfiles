@@ -8,6 +8,7 @@
   display: none !important;
 }
 
-#logo-big.invisible {
+.logo-big.invisible {
   display: none !important;
 }
+
