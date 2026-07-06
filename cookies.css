@@ -1,0 +1,33 @@
+.cmplz-document {
+    color: #faf6ed;
+	font-family: "Cormorant Garamond"
+}
+
+.cmplz-document h1,
+.cmplz-document h2,
+.cmplz-document h3 {
+    color: #faf6ed;
+    font-weight: 600;
+}
+
+.cmplz-document a {
+	color: #2c2520;
+    text-decoration: underline;
+}
+
+.cmplz-document a:hover {
+      color: #8b4a3a;
+    text-decoration: underline;
+}
+
+#cmplz-document p {
+	 font-size: 18px;
+}
+
+.cmplz-category-header, .cmplz-description {
+    color: #2c2520 !important;
+}
+
+[class^="cmplz-contact-"] {
+    font-weight: bold;
+}
