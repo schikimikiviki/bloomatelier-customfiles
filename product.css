@@ -1,0 +1,69 @@
+.product {
+	padding: 20% 5% 5% 5%;
+	font-family: "Cormorant Garamond";
+	color: #faf6ed; 
+}
+
+.product_title {
+	font-family: "Cinzel";
+	
+}
+
+
+	
+.woocommerce-product-gallery__image {
+	max-width: 30vw;
+}
+
+.single_add_to_cart_button {
+	background-color: #faf6ed !important;
+	color: #2c2520 !important;
+}
+
+.single_add_to_cart_button:hover {
+	color: #8b4a3a !important;
+}
+
+.posted_in a {
+	color: #2c2520 !important;
+}
+
+.posted_in a:hover {
+	color: #8b4a3a !important;
+}
+
+#tab-description h2 {
+	font-family: "Cinzel";
+}
+
+.related {
+	font-family: "Cinzel";
+}
+
+.woocommerce-loop-product__title {
+	color: #2c2520 !important;
+	text-decoration: underline !important;
+}
+
+.woocommerce-loop-product__title:hover {
+	color: #8b4a3a !important;
+}
+	
+
+.comment-form-rating .stars a {
+    color: #faf6ed;
+
+}
+
+.submit {
+	background-color: #faf6ed !important;
+	color: #2c2520 !important;
+}
+
+.submit:hover {
+	color: #8b4a3a !important;
+}
+
+.woocommerce-loop-product__title {
+	font-size: 18px !important;
+}

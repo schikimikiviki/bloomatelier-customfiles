@@ -1,0 +1,76 @@
+.woocommerce-Price-amount, .amount {
+	font-size: 17px;
+}
+
+.wp-block-woocommerce-cart{
+	background-color: #a08544;
+	width: 100%;
+	margin: 0; 
+	color: #faf6ed;
+	font-family: "Cormorant Garamond";
+	padding: 15% 5% 5% 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+		
+
+}
+
+.wc-block-grid__products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wp-block-heading{
+	font-family: "Cinzel";
+}
+
+.site-main {
+	background-color: #a08544 !important;
+	max-width: none !important;
+}
+
+.wc-block-grid__product-title {
+	font-size: 20px;
+	
+	
+}
+
+.add_to_cart_button  {
+	background-color: #faf6ed !important;	
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+    font-weight: 700;
+}
+
+
+.wc-block-grid__products a {
+	color: #2c2520;
+	
+	
+}
+
+.wc-block-grid__products a:hover {
+	color: #8b4a3a;
+	
+	
+}
+
+
+.wc-block-grid__product .wc-block-grid__product-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.woocommerce-Price-amount {
+    font-size: 22px !important;
+	font-weight: 600;
+	color: #faf6ed; 
+}
+
+.add_to_cart_button:hover  {
+	color: #a08544 !important;	
+}
