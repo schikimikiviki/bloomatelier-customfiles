@@ -1,0 +1,267 @@
+.woocommerce-Price-amount, .amount {
+	font-size: 17px;
+	color: #2c2520 !important;
+}
+
+.wp-block-woocommerce-cart{
+	background-color: #a08544;
+	width: 100%;
+	margin: 0; 
+	color: #faf6ed;
+	font-family: "Cormorant Garamond";
+	padding: 15% 5% 5% 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+		
+
+}
+
+.wc-block-grid__products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wp-block-heading{
+	font-family: "Cinzel";
+}
+
+.site-main {
+	background-color: #a08544 !important;
+	max-width: none !important;
+}
+
+.wc-block-grid__product-title {
+	font-size: 20px;
+	
+	
+}
+
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+    font-weight: 700;
+}
+
+
+.wc-block-grid__products a {
+	color: #2c2520;
+	
+	
+}
+
+.wc-block-grid__products a:hover {
+	color: #8b4a3a;
+	
+	
+}
+
+
+.wc-block-grid__product .wc-block-grid__product-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.woocommerce-Price-amount {
+    font-size: 22px !important;
+	font-weight: 600;
+	color: #faf6ed; 
+}
+
+
+
+.product {
+	padding: 20% 5% 5% 5%;
+	font-family: "Cormorant Garamond";
+	color: #faf6ed; 
+}
+
+.product_title {
+	font-family: "Cinzel";
+	
+}
+
+
+	
+.woocommerce-product-gallery__image {
+	max-width: 30vw;
+}
+
+.single_add_to_cart_button {
+	background-color: #faf6ed !important;
+	color: #2c2520 !important;
+	 
+}
+
+.single_add_to_cart_button:hover {
+	color: #8b4a3a !important;
+}
+
+.posted_in a {
+	color: #2c2520 !important;
+}
+
+.posted_in a:hover {
+	color: #8b4a3a !important;
+}
+
+#tab-description h2 {
+	font-family: "Cinzel";
+}
+
+.related {
+	font-family: "Cinzel";
+}
+
+.woocommerce-loop-product__title {
+	color: #2c2520 !important;
+	text-decoration: underline !important;
+}
+
+.woocommerce-loop-product__title:hover {
+	color: #8b4a3a !important;
+}
+	
+
+.comment-form-rating .stars a {
+    color: #faf6ed;
+
+}
+
+.submit {
+	background-color: #faf6ed !important;
+	color: #2c2520 !important;
+}
+
+.submit:hover {
+	color: #8b4a3a !important;
+}
+
+.woocommerce-loop-product__title {
+	font-size: 18px !important;
+}
+
+.added_to_cart{
+	color: #faf6ed !important;
+	font-size: 18px !important;
+	text-decoration: underline !important; 
+}
+
+.eael-product-title {
+	color: #2c2520 !important;
+	font-size: 18px !important;
+}
+
+.eael-product-popup-details {
+	background-color: #faf6ed !important;
+	
+}
+
+.wp-block-button__link {
+	background-color: #2c2520 !important;
+	color: #faf6ed !important;
+	font-size: 16px !important; 
+	
+}
+.wp-block-button__link:hover {
+	background-color: #8b4a3a !important;
+	
+	
+}
+
+
+#primary {
+    padding: 20% 5% 5% 5%;
+	background-color: #a08544 !important;
+	font-family: "Cormorant Garamond"; 
+}
+
+.woocommerce-breadcrumb {
+	font-size: 17px !important; 
+	color: #2c2520 !important;
+	
+}
+
+.woocommerce-breadcrumb a {
+	color: #faf6ed !important;
+	
+}
+
+.wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large * {
+    font-size: 18px !important;
+}
+
+.wc-block-components-button.contained {
+    color: #faf6ed !important;
+	border-color: none !important;
+	background-color: #2c2520 !important; 
+}
+
+.wc-block-components-button.contained:hover {
+	background-color: #8b4a3a !important; 
+}
+
+.wc-block-components-product-name {
+	color: #2c2520 !important;
+		
+}
+
+.wc-block-components-product-name:hover {
+	color: #8b4a3a !important;
+		
+}
+
+.add_to_cart_button {
+	color: #2c2520 !important;
+}
+
+.wc-block-components-form, .wc-block-checkout__form {
+	font-family: "Cormorant Garamond" !important; 
+	font-size: 18px !important; 
+	padding: 25% 10% 10% 10% !important; 
+	color: #faf6ed !important; 
+}
+
+.wc-block-components-form, .wc-block-checkout__form a {
+	color: #2c2520 !important; 
+}
+
+.wp-block-woocommerce-checkout-order-summary-block {
+	font-family: "Cormorant Garamond" !important; 
+	font-size: 18px !important; 
+	color: #faf6ed !important; 
+	margin-top: 40% !important; 
+	margin-right: 20% !important;    
+	
+	
+}
+
+.wc-block-components-sidebar {
+    position: static !important;
+    top: auto !important;
+}
+
+.wc-block-components-button {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.woocommerce {
+	
+	padding: 25% 10% 10% 10% !important; 
+	color: #faf6ed !important;
+	font-family: "Cormorant Garamond" !important; 
+	font-size: 18px !important; 
+}
+
+.woocommerce a {
+	
+	color: #2c2520 !important;
+}
+
+.woocommerce a:hover {
+	
+	color: #8b4a3a !important;
+}
