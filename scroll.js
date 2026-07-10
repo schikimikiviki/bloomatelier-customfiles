@@ -23,8 +23,7 @@ function initLogoScroll(container) {
 
   const img = document.createElement('img');
 
-  img.src =
-      'https://bloomatelier.eu/wp-content/uploads/2026/06/Pasted-image.png';
+  img.src = 'https://bloomatelier.eu/wp-content/uploads/2026/07/Logo-2.0-1.png';
   img.alt = 'Logo';
   img.style.transition = 'opacity 0.2s ease';
 
@@ -45,7 +44,7 @@ function initLogoScroll(container) {
     setTimeout(() => {
       img.src = scrolled ?
           'https://bloomatelier.eu/wp-content/uploads/2026/07/cropped_smaller.png' :
-          'https://bloomatelier.eu/wp-content/uploads/2026/06/Pasted-image.png';
+          'https://bloomatelier.eu/wp-content/uploads/2026/07/Logo-2.0-1.png';
 
       img.style.opacity = 1;
     }, 150);
