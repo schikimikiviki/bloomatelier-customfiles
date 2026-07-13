@@ -3,13 +3,21 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99999;
 	height: 15vh;
 	padding-top: 1.5%;
 	min-height: unset !important;
+}
+
+@media (max-width: 767px) {
+
+    #tahefobu-header  {
+       padding-top: 0 !important;
+    }
+
 }
 
 
 #tahefobu-header .elementor-element {
   min-height: unset !important;
 }
+

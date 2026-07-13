@@ -23,7 +23,18 @@ function initLogoScroll(container) {
 
   const img = document.createElement('img');
 
-  img.src = 'https://bloomatelier.eu/wp-content/uploads/2026/07/Logo-2.0-1.png';
+  const isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+  img.src = isMobile ?
+      'https://bloomatelier.eu/wp-content/uploads/2026/07/cropped_smaller.png' :
+      'https://bloomatelier.eu/wp-content/uploads/2026/07/Logo-2.0-1.png';
+
+  if (isMobile) {
+    img.style.maxHeight = '80px';
+  } else {
+    img.style.maxHeight = '350px';
+  }
+
   img.alt = 'Logo';
   img.style.transition = 'opacity 0.2s ease';
 
@@ -31,24 +42,26 @@ function initLogoScroll(container) {
 
   let isSmall = false;
 
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY >= 300;
-    if (scrolled === isSmall) return;
+  if (!isMobile) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY >= 300;
+      if (scrolled === isSmall) return;
 
-    isSmall = scrolled;
+      isSmall = scrolled;
 
-    img.style.opacity = 0;
-    img.style.marginTop = scrolled ? '-3vh' : '0px';
-    menu.style.paddingTop = scrolled ? '10px' : '0';
+      img.style.opacity = 0;
+      img.style.marginTop = scrolled ? '-3vh' : '0px';
+      menu.style.paddingTop = scrolled ? '10px' : '0';
 
-    setTimeout(() => {
-      img.src = scrolled ?
-          'https://bloomatelier.eu/wp-content/uploads/2026/07/cropped_smaller.png' :
-          'https://bloomatelier.eu/wp-content/uploads/2026/07/Logo-2.0-1.png';
+      setTimeout(() => {
+        img.src = scrolled ?
+            'https://bloomatelier.eu/wp-content/uploads/2026/07/cropped_smaller.png' :
+            'https://bloomatelier.eu/wp-content/uploads/2026/07/Logo-2.0-1.png';
 
-      img.style.opacity = 1;
-    }, 150);
-  });
+        img.style.opacity = 1;
+      }, 150);
+    });
+  }
 }
 
 if (document.readyState === 'loading') {
