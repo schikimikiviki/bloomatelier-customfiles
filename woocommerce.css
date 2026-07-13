@@ -172,7 +172,7 @@
 
 
 #primary {
-    padding: 20% 5% 5% 5%;
+	padding: 20% 5% 5% 5%;
 	background-color: #a08544 !important;
 	font-family: "Cormorant Garamond"; 
 }
@@ -249,8 +249,6 @@
 }
 
 .woocommerce {
-	
-	padding: 25% 10% 10% 10% !important; 
 	color: #faf6ed !important;
 	font-family: "Cormorant Garamond" !important; 
 	font-size: 18px !important; 
@@ -262,6 +260,24 @@
 }
 
 .woocommerce a:hover {
-	
 	color: #8b4a3a !important;
+}
+
+/* POPUP */ 
+.eael-woo-product-popup {
+    position: fixed !important;
+    z-index: 999999 !important;
+}
+
+.eael-product-popup-ready {
+    z-index: 999999 !important;
+}
+
+.eael-product-popup-modal-bg {
+    z-index: 999998 !important;
+}
+
+#photoswipe-fullscreen-dialog,
+.pswp {
+    z-index: 999999 !important;
 }
