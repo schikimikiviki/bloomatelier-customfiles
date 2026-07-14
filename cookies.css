@@ -21,7 +21,7 @@
 }
 
 #cmplz-document p {
-	 font-size: 18px;
+	 font-size: 20px;
 }
 
 .cmplz-category-header, .cmplz-description {
@@ -30,4 +30,17 @@
 
 [class^="cmplz-contact-"] {
     font-weight: bold;
+}
+
+
+#cmplz-document ul li {
+	 font-size: 20px;
+}
+
+
+
+@media (max-width: 767px) {
+    .e-con-inner {
+        margin-top: 100px !important;
+    }
 }

@@ -5,3 +5,35 @@
     }
 
 }
+
+@media (max-width: 850px) {
+
+    .wp-block-woocommerce-cart {
+      padding-top: 30vh !important; 
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .wc-block-cart__submit-container, .wc-block-cart__submit-container--sticky {
+      background-color: #faf6ed !important; 
+    }
+
+}
+@media (max-width: 850px) {
+	.post-type-archive-product  {
+     padding-top: 20vh !important;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+	.type-product  {
+     padding-top: 20vh !important;
+    }
+
+}
+
+
